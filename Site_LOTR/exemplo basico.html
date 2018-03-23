@@ -1,0 +1,102 @@
+
+<!-- Esta construção é um comentário em HTML -->
+
+
+<!DOCTYPE html> <!-- define o tipo de documento como sendo um documento em HTML -->
+<html> <!-- esse tag envolve as duas partes do código HTML, o head e o body -->
+ <head> <!--  -->
+     <meta charset="utf-8"/> <!-- transforma o código em unicode para ter os acentos brasileiros-->
+
+     <!--O meta abaixo serve para verificar se o site irá ficar responsivo -->
+    <meta name="responsivo" content="width=device-width, initial-scale=1.0">
+
+     <tittle> F4NT0 </tittle>
+      <br/>
+
+
+     <!-- Parte do código em CSS (Dentro da tag style)-->
+       <style>
+           /* isto é um comentário em CSS */
+
+           /*
+              Isto é um comentário de Multiplas linhas no CSS
+            */
+
+
+            /* a construção body é onde fica como vai ser o estilo do site*/
+           body{
+                background-color: black;
+               /*background-color: black;   para alterar a cor do fundo do site*/
+
+               /* o código abaixo serve para colocar uma imagem de fundo no site, utilizando um link externo*/
+               /*background-image: url("https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif");*/
+
+
+               /* background-size: cover;  para colocar a imagem de basckground como unica no centro*/
+
+           }
+
+           /*  este código abaixo é alterando o tipo de letra do paragrafo,criando a classe teste*/
+           /*  para chamar ele no body é só criar um paragrafo e chamar a classe teste1*/
+           p.teste1{
+               font-family: "Courier new",courier,monospace;
+               font-style: normal;
+           }
+
+
+       </style>
+
+      <!-- Parte do código Javascript (Dentro da tag script)-->
+     <script>
+         // isto é um comentário em javascript
+
+         /*
+         * isto é um comentário de multiplas linhas em javascript
+         *
+         */
+
+         //esta função serve para mostrar uma tela de alerta com mensagem
+
+         /* function telalerta(){
+             alert("Teste de mensagem apresentada!!")
+         }
+         */
+
+
+     </script>
+
+ </head>
+<body> <!-- Parte visível do Site, onde tudo que será definido aqui irá aparecer no site depois -->
+
+  <!--  <input type="button" onclick="telalerta()" style="color:red;" value="Clique Aqui"/>  -->
+
+  <!-- Este input serve para criar
+    o modelo do botão e colocar uma mensagem dele, depois quando clicar irá apresentar a função nomedesejado()-->
+
+  <!-- para alterar a cor das letras no site iremos usar o comando style como mostrado abaixo: -->
+
+   <!--  <p style="color:green;">  Esta mensagem irá aparecer em Verde no site</p> <!-- o style é dentro da tag p -->
+
+  <!-- Utilizando a classe teste1 no texto do programa, colocando a cor em azul também: -->
+
+    <!--  <p class="teste1" style="color:blue"> Texto Criado usando a Classe teste1 como exemplo </p> -->
+
+  <!-- Adicionando uma imagem no site:  -->
+
+  <!-- esta parte de baixo irá centralizar tudo que tiver dentro da tag no centro do site -->
+   <center>
+       <!-- para adicionar uma imagem no site, tem que ter a imagem na mesma pasta do arquivo HTML-->
+       <img src="ring.png" style="width:100%;">
+
+       <!--  O style da imagem serve para que a imagem do site se encaixe em qualquer aparelho-->
+
+       <!-- Texto centralizado com as cores desejadas -->
+       <p class="teste1" style="color:orange" style="font-size:10vw"> One Ring to Rule them All</p>
+       <p class="teste1" style="color:orange" style="font-size:10vw"> One Ring to Find them</p>
+       <p class="teste1" style="color:orange" style="font-size:10vw"> One Ring to Bring them All</p>
+       <p class="teste1" style="color:orange" style="font-size:10vw"> And in the Darkness Bind Them</p>
+
+   </center>
+
+</body> <!-- Finalização da parte do body -->
+</html> <!-- Finalização de todas as partes do código-->

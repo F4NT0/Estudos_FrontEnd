@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<center>
+   <head>
+        <!--Biblioteca de Jquery para usar as funções de Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--título do site-->
+        <title>Site do Fanto</title>
+        <meta charset="utf-8">
+        <!--Style é onde ficam os comandos CSS para HTML, neste caso serve para o site todo-->
+        <style>
+            body{
+                /*Aqui fica a cor de fundo do Site*/
+                background-image: url(http://img20.laughinggif.com/pic/HTTP3d3dy5zb3N0ZWMuY28udWsvaW1hZ2VzL21hdHJpeC1jb2RlLmdpZgloglog.gif);
+                margin: auto; /*Aqui fica a opção de deixar o site alinhado*/
+            }
+            /*este p.solid serve para criar uma caixa envolta de um texto*/
+            /*para chamar tem que chamar com class = "nomedotipo"*/
+            p.solid {border-style: double}
+
+            /*Cor do comando h1*/
+            h1{
+                color: darkgoldenrod;
+            }
+
+            /*Cor do comando h3*/
+            h3{
+                color: white;
+            }
+
+            /*cor da fonte dos paragrafos(p)*/
+            p{
+                color: green;
+            }
+
+            /*Fonte da Letra do Texto do site*/
+            p.Monospace{
+                font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+            }
+
+            /*Cor do comando body e o formato de letra*/
+            body.Monospace{
+                font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+            }
+
+            /*cor do comando a*/
+            a {
+                color: green;
+            }
+
+            /*Quando o link não foi visitado ainda: */
+            a:link{
+                color = blue;
+            }
+
+            /*Quando o link ja foi visitado: */
+            a:visited{
+                color = red;
+            }
+
+            /*Quando o mouse passa por cima do link:*/
+            a:active{
+                color = purple;
+            }
+
+            /*tamanho de todas as imagens colocadas no site*/
+            img {
+                width: 400px;
+                margin: auto;
+                border: #50ff32;
+            }
+        </style>
+
+        <!--script é onde ficam os comandos de Jquery que é uma biblioteca de Javascript-->
+        <script>
+
+            /*esta função de Jquery serve para esconder a informação de um texto e mostrar uma imagem*/
+            $(document).ready(function () {
+                $("button[name='choice1']").click(function () {
+                    $("h3[name='blue']").hide("slow", function () {
+                        alert("HELLO MR ANDERSON!");
+
+                    });
+
+                });
+
+                /*esta função de Jquery serve para esconder a informação de um texto e mostrar uma imagem*/
+                $(document).ready(function () {
+                    $("button[name='choice2']").click(function () {
+                        $("h6[name='red']").hide("slow", function () {
+                            alert("OPEN YOUR MIND!");
+
+                        });
+                    });
+                });
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+    <h1> R4BBIT H0L3 </h1>
+    <hr/>
+       <img src="http://www.angelfire.com/super/badwebs/3-AsciiGuy-Matrix.gif"/>
+       <a href="https://pt.wikipedia.org/wiki/Matrix" target="_blank"> Wikipedia Info Sobre Matrix </a>
+    <hr/>
+
+    <h3 style="color: purple"> I'm Morpheus and i'm here to give you a chance to Understand the Truth</h3>
+    <img src="http://dazedimg.dazedgroup.netdna-cdn.com/1024/azure/dazed-prod/1200/7/1207544.jpg"/>
+
+    <hr/>
+
+    <h3 style="color: white" name="blue"> If you choose the <code style="color: blue">Blue Pill</code>,the story ends.
+        You wake up in your bed and believe whatever you want to believe.</h3>
+
+    <h6 style="color: white" name="red"> If you choose the <code style="color: red">Red Pill</code>,you stay in wonderland,
+        and i show you how deep the rabbit hole goes </h6>
+
+    <h4 style="color: green">What do you choose?</h4>
+    <button style="color: white" name="choice1" ><code style="color: blue">Blue Pill</code></button>
+    <button style="color: white" name="choice2" ><code style="color: red">Red Pill</code></button>
+    </body>
+</center>
+    </html>
