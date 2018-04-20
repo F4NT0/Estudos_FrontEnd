@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--o meta serve para reconhecer acentos  -->
+    <meta charset="utf-8">
+    <!-- Titulo do programa -->
+    <title>Introdução ao Vue</title>
+     <!--Inicializa o Vue no projeto  -->
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+       <div id="app">
+           {{ msg }}
+            <!-- isto se chama interpolação de expressão(renderiza variaveis)-->
+<!-- Criando um botão no nosso app  -->
+            <br/>
+            <br/>
+            <input type="text" v-model="user.name">
+            <!-- v-model manipula os dados de entrada da variável-->
+            <p>Nome: {{user.name}}</p>
+            <!--  O valor de entrada no nome irá ser armazenado no nome da
+               variavel usuário.nome usando a interpolação de expressão
+             -->
+             <button v-if="!click" v-on:click="UserClick">Salvar</button>
+             <!-- v-if serve para verificar se é verdadeiro ou falso  -->
+             <!-- !click significa que ele esta negando a variavel click-->
+             <button v-if="click" v-on:click="UserClick">Aguarde...</button>
+             <!--se o valor de click for verdadeiro, esse botão aparece -->
+             <!-- v-on:click é uma diretiva para controlar o clique no botao-->
+             <!-- se ocorrer o click, ele vai ativar o método UserClick-->
+       </div>
+     <!-- Abaixo se pode trabalhar com Javascript-->
+    <script type="text/javascript">
+        var app = new Vue({ /*esta chamando o div definido com ip de app*/
+          el:"#app", /*não se esqueça da virgula*/
+          data:{
+            msg:'Digite seu nome:',
+             /*o valor dessa variavel será renderizada no div app*/
+             click: false, /*variavel de teste para os botões*/
+             user:{name:""} /*variavel user recebe um nome por input */
+           },
+           /*abaixo está a construção para colocar método no Vue*/
+           methods:{
+             UserClick: function(){ /*o método vai receber uma função*/
+                  this.click = !this.click; /*o this pega o valor de click*/
+                  /*o valor do click é alterado quando esse método é ativado*/
+                 }
+           }
+        });
+
+    </script>
+
+  </body>
+</html>
