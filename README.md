@@ -1,9 +1,5 @@
 # Bem Vindo ao Repositório de Informações e Testes de Front-End
 
-![alt text](https://jdwilson.ca/static/img/logos/HTML5.svg "html")
-![alt text](https://jdwilson.ca/static/img/logos/css3.svg "css")
-![alt text](https://jdwilson.ca/static/img/logos/js.svg "Javascript")
-
 ## O que existe neste Repositório:
 * Testes de Front-End:
    * São Páginas em HTML+CSS+Javascript para testar a construção e testes
@@ -21,3 +17,7 @@
     * As Informações sobre Javascript estão em um Repositório Separado que pode ser acessado [Aqui](https://github.com/F4NT0/Javascript_Info)
     * Nos próprios sites de Teste existe testes e exemplos de uso de Código com Javascript
     * Javascript é uma linguagem de Programação, o que HTML+CSS não são.
+
+---    
+    
+<img src="https://jdwilson.ca/static/img/logos/HTML5.svg" width="200"><img src="https://jdwilson.ca/static/img/logos/css3.svg" width="200"><img src="https://jdwilson.ca/static/img/logos/js.svg" width="200">
